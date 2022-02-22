@@ -1,13 +1,13 @@
-# basic socketio test
+# Basic socketio playground
 Basic test using socket.io for testing clients reconnection using the default settings.
 
-## motivation
+## Motivation
 It's useful to see how socket.io interacts with different client state, for example on web mobile when you change tab or when you go in aero-mode then reconnect.
 Without configuring special timeouts and keep-alive, the socket.io client can reconnect on every behaviour!
 
 For more info please see the defaults here: https://socket.io/docs/v3/client-api/
 
-## setup
+## Setup
 
 ```
 nvm use
@@ -15,7 +15,7 @@ nvm use
 npm i
 ```
 
-## run 
+## Run 
 ```
 npm run server
 ```
