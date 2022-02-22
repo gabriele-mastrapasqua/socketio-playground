@@ -17,7 +17,12 @@ npm i
 
 ## Run 
 ```
-npm run server
+npm run dev
 ```
 
 Then connect on http://localhost:3000/ with multiple browser tabs to see the same random number broadcasted to all users every 2 seconds, a list of users connected (using the socket.id) and a basic chat without history or rooms.
+
+## Build 
+```
+npm run build
+```
