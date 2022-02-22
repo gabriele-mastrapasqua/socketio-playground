@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "my first socket.io app",
   "scripts": {
-    "server": "npx nodemon src/index.ts"
+    "server": "npx nodemon src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
     "express": "^4.17.3",
