@@ -9,13 +9,15 @@ const app: Application = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer);
 
+app.use(express.static('public'))
+
 
 // HTTP web server
 httpServer.listen(WEBSERVER_PORT, () => {
     console.log(`listening on *:${WEBSERVER_PORT}`);
 });
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname,"./index.html");
 });
 
 const getUserIdFromSocket = () => {
