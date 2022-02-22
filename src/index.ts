@@ -3,7 +3,7 @@ import express = require('express');
 import { createServer } from "http";
 import { Server } from "socket.io";
 
-const SOCKETIO_PORT = process.env.PORT || 3000
+const WEBSERVER_PORT = process.env.PORT || 3000
 
 const app: Application = express();
 const httpServer = createServer(app);
@@ -11,8 +11,8 @@ const io = new Server(httpServer);
 
 
 // HTTP web server
-httpServer.listen(3000, () => {
-    console.log('listening on *:3000');
+httpServer.listen(WEBSERVER_PORT, () => {
+    console.log(`listening on *:${WEBSERVER_PORT}`);
 });
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
