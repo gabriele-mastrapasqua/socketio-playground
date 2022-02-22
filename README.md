@@ -7,6 +7,11 @@ Without configuring special timeouts and keep-alive, the socket.io client can re
 
 For more info please see the defaults here: https://socket.io/docs/v3/client-api/
 
+## Test
+
+Try out the demo here: https://socketio-playground.herokuapp.com/
+
+
 ## Setup
 
 ```
@@ -25,4 +30,9 @@ Then connect on http://localhost:3000/ with multiple browser tabs to see the sam
 ## Build 
 ```
 npm run build
+```
+
+## Run production build
+```
+npm run start
 ```
